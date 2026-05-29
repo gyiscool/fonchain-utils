@@ -36,10 +36,12 @@ type translation struct {
 var translationObj *translation
 
 func NewTranslation(ak, sk, url string) {
-	translationObj = &translation{
-		ClientID: ak,
-		Secret:   sk,
-		Url:      url,
+	if translationObj == nil {
+		translationObj = &translation{
+			ClientID: ak,
+			Secret:   sk,
+			Url:      url,
+		}
 	}
 }
 
