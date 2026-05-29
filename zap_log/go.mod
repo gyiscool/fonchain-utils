@@ -1,4 +1,4 @@
-module zap_log
+module github.com/gyiscool/fonchain-utils/zap_log
 
 go 1.18
 
